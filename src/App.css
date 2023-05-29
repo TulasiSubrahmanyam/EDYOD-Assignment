@@ -1,38 +1,263 @@
-.App {
-  text-align: center;
+.nav-bg{
+  width: 100%;
+  height: 65px;
+  background-color: #ffffff;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo{
+  width: 120px;
+  height: 48px;
+   padding:10px ;
+   margin-top: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.bg-container {
+  background-image: url("/public/images/bgcover.png");
   min-height: 100vh;
+  width: 100%;
+  padding:50px;
+}
+
+.navbar-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 30px;
+}
+/* Dropdown menu styles */
+
+.selection{
+  font-size: 15px;
+  color: #000000;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100px;
+  margin-right: 40px;
+  margin-left: 15px;
+  
+}
+
+.searchIcon{
+  width: 22px;
+  height: 22px;
+}
+
+.login{
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+}
+.joinButton{
+
+    outline: none;
+    border: none;
+    width: 160px;
+    height: 38px;
+    background: linear-gradient(266.79deg, #0048FF 4.63%, #0096FF 100%);
+    border-radius: 52px;
+    color: #ffffff;
+    font-family:"Raleway";
+    font-weight: 600;
+    font-size: 16px;
+}
+.courseHeading{
+   font-family: 'Raleway';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 42px;
+   color: #FFFFFF;
+}
+.icons{
+  width: 50px;
+  height: 50px;
+}
+.courseDetails{
+  margin-left: 35px;
+  margin-top: 10px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+.loginCard{
+  background: #FFFFFF;
+  border-radius: 8px;
+  width: 420px;
+  height: 670px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px;  
+}
+.circle{
+    width: 30px;
+    height: 30px;
+    background: #0096FF;
+    border-radius: 100%;
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+
+}
+.signupSubscribe{
+  
+font-family: 'Roboto';
+font-size: 12px;
+color: #3C4852;
+text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.boxContainer{
+width:380px;
+height: 52px;
+margin-bottom:10px;
+background: #E7E7E7;
+border: 2px solid #BEBEBE;
+border-radius: 4px;
+padding-left: 16px;
+padding-right: 16px;
+
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.planSubscription{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+}
+.price{
+font-family: 'Roboto';
+font-size: 10px;
+color: #3C4852;
+
+}
+.expirecard{
+
+width: 90px;
+height: 13px;
+margin-left: 40px;
+
+background: #F77171;
+border-radius: 0px 0px 4px 4px;
+margin-right: 0px;
+}
+
+.recommendedcard{
+
+  width: 90px;
+  height: 13px;
+  margin-left: 40px;
+
+  background: #47BA68;
+  border-radius: 0px 0px 4px 4px;
+  margin-right: 0px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+ /* Hide the default radio button */
+.greenRadio {
+  appearance: none;
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #47BA68;
+  margin-right: 10px;
+  display: inline-grid;
+  place-content: center;
+  border-radius: 50%;
+}
+
+/* Style the custom radio button */
+.greenRadio::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  transform: scale(0);
+  transform-origin: bottom left;
+  background-color: #ffffff;
+  clip-path: polygon(0 50%, 40% 90%, 100% 0, 85% 2%, 40% 65%, 25% 55%);
+}
+/* Style the tick mark */
+.greenRadio:checked::before {
+  transform: scale(1);
+}
+
+
+/* Style the background color and border for the checked radio button */
+.greenRadio:checked {
+  background-color: #47BA68;
+  border: 2px solid #47BA68;
+}
+.normalRadio {
+  appearance: none;
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #BEBEBE;
+  border-radius: 50%;
+  margin-right: 13px;
+  margin-left: 5px;
+  
+}
+.custom-hr {
+  width: 380px;
+  height: 2px;
+  border-width: 2px;
+  background-color: #BEBEBE;
+}
+.offerBox{
+padding-right: 18px;  
+padding-left: 18px;
+padding-top: 10px;
+width: 380px;
+height: 60px;
+background: linear-gradient(135deg, rgba(247, 113, 113, 0.2) 0%, rgba(222, 67, 19, 0.2) 0.75%, rgba(222, 67, 19, 0.2) 2.92%, rgba(222, 68, 20, 0.2) 6.37%, rgba(223, 69, 21, 0.2) 10.97%, rgba(223, 72, 22, 0.2) 16.59%, rgba(224, 75, 24, 0.2) 23.1%, rgba(225, 80, 27, 0.2) 30.37%, rgba(227, 86, 31, 0.2) 38.27%, rgba(229, 94, 36, 0.2) 46.66%, rgba(231, 104, 43, 0.2) 55.41%, rgba(235, 117, 51, 0.2) 64.39%, rgba(238, 132, 60, 0.2) 73.47%, rgba(243, 149, 71, 0.2) 82.52%, rgba(248, 169, 84, 0.2) 91.41%, rgba(254, 193, 99, 0.2) 100%);
+border-radius: 7px;
+border:solid 2px #DE4313;
+}
+.offerLimited{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+color: #DE4313;
+
+
+}
+.iconLock{
+  width: 18px;
+  height: 18px;
+  margin-right:5px;
+}
+.cancelBtn{
+width: 180px;
+height: 40px;
+border: 2px solid #F77171;
+border-radius: 4px;
+color: #F77171;
+font-family: "Roboto";
+font-size: 12px;
+margin-right: 10px;
+}
+.payBtn{
+width: 180px;
+height: 40px;
+background: #47BA68;
+border-radius: 4px;
+border: none;
+font-family: "Roboto";
+font-size: 12px;
+color: #FFFFFF;
+
+}
+.razologo{
+  
+  height: 33px;
+  margin-top:20px;
+
 }
